@@ -21,5 +21,5 @@ Objectives for weeks 10/11
 3. Refactor if needed
 4. Test
 
-Objectives for weeks 12
+Objectives for week 12
 1. Documentation
