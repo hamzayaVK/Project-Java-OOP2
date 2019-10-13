@@ -1,0 +1,25 @@
+Objectives for weeks 4/5
+1. Determening needed functionalities
+2. Creating DB model
+3. Creating UML model/Class Diagram
+4. Determine needed technologies for the project - Maven, Hibernate, Java FX
+
+Objectives for weeks 6/7
+1. Creating actual DB with tables for users,admins and couriers
+2. Insert data in the DB
+3. Start implementing some of the functionalities needed
+
+Objectives for weeks 8/9
+1. Test functionalities
+2. Create log file to keep track
+3. Start with GUI research and creation
+4. Continue with tests
+
+Objectives for weeks 10/11
+1. Finish GUI creation
+2. Test
+3. Refactor if needed
+4. Test
+
+Objectives for weeks 12
+1. Documentation
