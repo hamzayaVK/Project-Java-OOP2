@@ -1,6 +1,11 @@
 package users;
 
+import couriercompany.CourierOffice;
+import order_package.Orders;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "courier")
@@ -23,12 +28,38 @@ public class Courier {
     @Column(name = "password")
     private String password;
 
-    @Column(name = "usertype")
-    private String usertype;
+    @OneToMany(mappedBy = "courier")
+    private List<Orders> ordersList = new ArrayList<>();
 
-    @ManyToOne()
-    @JoinColumn(name = "fk_courieroffice")
-    private CourierOffice courieroffice;
+    @ManyToOne
+    @JoinColumn(name = "courierofficeid")
+    private CourierOffice courierOffice;
+
+    public Courier(){}
+
+    public Courier(String username, String password, String firstName, String familyName)
+    {
+        this.username = username;
+        this.password = password;
+        this.firstname = firstName;
+        this.familyname = familyName;
+    }
+
+    public CourierOffice getCourieroffice() {
+        return courierOffice;
+    }
+
+    public void setCourieroffice(CourierOffice courierOffice) {
+        this.courierOffice = courierOffice;
+    }
+
+    public List<Orders> getOrdersList() {
+        return ordersList;
+    }
+
+    public void setOrdersList(List<Orders> ordersList) {
+        this.ordersList = ordersList;
+    }
 
     public String getFamilyname() {
         return familyname;
@@ -54,14 +85,6 @@ public class Courier {
         this.password = password;
     }
 
-    public String getUsertype() {
-        return usertype;
-    }
-
-    public void setUsertype(String usertype) {
-        this.usertype = usertype;
-    }
-
     public int getId() {
         return id;
     }
@@ -76,5 +99,26 @@ public class Courier {
 
     public void setFirstname(String firstname) {
         this.firstname = firstname;
+    }
+
+    public CourierOffice getCourierOffice() {
+        return courierOffice;
+    }
+
+    public void setCourierOffice(CourierOffice courierOffice) {
+        this.courierOffice = courierOffice;
+    }
+
+    @Override
+    public String toString() {
+        return "Courier{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", familyname='" + familyname + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", ordersList=" + ordersList +
+                ", courierOffice=" + courierOffice +
+                '}';
     }
 }

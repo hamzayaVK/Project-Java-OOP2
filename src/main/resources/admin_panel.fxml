@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="courierServices" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminWindowController">
+   <children>
+      <TabPane layoutY="31.0" prefHeight="495.0" prefWidth="599.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Create Courier">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="600.0">
+                     <children>
+                        <Button layoutX="251.0" layoutY="65.0" mnemonicParsing="false" onAction="#createCourier" prefHeight="17.0" prefWidth="84.0" text="CREATE" />
+                        <TextField fx:id="courierUsername" layoutX="43.0" layoutY="65.0" promptText="Username" />
+                        <TextField fx:id="courierPassword" layoutX="43.0" layoutY="109.0" promptText="Password" />
+                        <TextField fx:id="courierFirstName" layoutX="43.0" layoutY="150.0" promptText="First Name" />
+                        <TextField fx:id="courierLastName" layoutX="43.0" layoutY="196.0" promptText="Family Name" />
+                        <Label layoutX="219.0" layoutY="24.0" text="Courier Information" />
+                        <ChoiceBox fx:id="courierOffice" layoutX="43.0" layoutY="239.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Create Administrator">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="600.0">
+                     <children>
+                        <TextField fx:id="administratorUsername" layoutX="26.0" layoutY="77.0" promptText="Username" />
+                        <TextField fx:id="administratorPassword" layoutX="26.0" layoutY="127.0" promptText="Password" />
+                        <ChoiceBox fx:id="administratorExistingCompanyCB" layoutX="26.0" layoutY="173.0" onMouseClicked="#updateAdministratorCompanyCB" prefWidth="150.0" />
+                        <Label layoutX="203.0" layoutY="32.0" text="Administrator Information" />
+                        <Button layoutX="216.0" layoutY="77.0" mnemonicParsing="false" onAction="#createAdministrator" prefHeight="17.0" prefWidth="84.0" text="CREATE" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Create Office">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="251.0" layoutY="36.0" text="Office Information" />
+                        <Button layoutX="170.0" layoutY="91.0" mnemonicParsing="false" onAction="#createOffice" text="CREATE" />
+                        <ChoiceBox fx:id="existingOfficeCB" layoutX="408.0" layoutY="91.0" onMouseClicked="#updateExistingOfficeCB" prefWidth="150.0" />
+                        <TextField fx:id="officeCity" layoutX="14.0" layoutY="91.0" promptText="City" />
+                        <TextField fx:id="officeDistrict" layoutX="14.0" layoutY="136.0" promptText="District" />
+                        <Label layoutX="35.0" layoutY="53.0" text="Address Information" />
+                        <ChoiceBox fx:id="officeExistingCompanyCB" layoutX="14.0" layoutY="181.0" onMouseClicked="#updateOfficeExistingCompanyCB" prefWidth="150.0" value="ExistingCompanies" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Create Company">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="241.0" layoutY="35.0" text="Company Information" />
+                        <Label layoutX="47.0" layoutY="52.0" text="Address Information" />
+                        <Button layoutX="184.0" layoutY="90.0" mnemonicParsing="false" onAction="#createCompany" text="CREATE" />
+                        <ChoiceBox fx:id="existingCompanyCB" layoutX="407.0" layoutY="90.0" onMouseClicked="#updateExistingCompanyCB" prefWidth="150.0" />
+                        <TextField fx:id="companyCity" layoutX="27.0" layoutY="90.0" promptText="City" />
+                        <TextField fx:id="companyDistrict" layoutX="27.0" layoutY="130.0" promptText="District" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Logout">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="205.0" layoutY="170.0" mnemonicParsing="false" onAction="#logoutAdminPanel" prefHeight="126.0" prefWidth="189.0" text="Logout" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="257.0" layoutY="6.0" text="Courier Services" />
+   </children>
+</Pane>
