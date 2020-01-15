@@ -1,6 +1,4 @@
-package couriercompany;
-
-import address.Address;
+package POJO;
 
 import javax.persistence.*;
 import java.util.List;

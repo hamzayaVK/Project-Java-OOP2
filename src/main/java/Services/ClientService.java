@@ -1,12 +1,12 @@
 package Services;
 
-import address.Address;
+import POJO.Address;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import singletonconfig.SingletonConfig;
-import users.Client;
+import POJO.Client;
 import java.util.ArrayList;
 import java.util.List;
 

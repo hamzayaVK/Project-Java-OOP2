@@ -1,4 +1,4 @@
-package address;
+package POJO;
 
 import javax.persistence.*;
 

@@ -1,11 +1,11 @@
 package Services;
 
-import couriercompany.CourierOffice;
+import POJO.CourierOffice;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Transaction;
 import singletonconfig.SingletonConfig;
-import users.Courier;
+import POJO.Courier;
 import java.util.ArrayList;
 import java.util.List;
 

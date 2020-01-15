@@ -1,8 +1,4 @@
-package couriercompany;
-
-import address.Address;
-import order_package.Orders;
-import users.Courier;
+package POJO;
 
 import javax.persistence.*;
 import java.util.ArrayList;

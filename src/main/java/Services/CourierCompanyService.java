@@ -1,8 +1,8 @@
 package Services;
 
-import address.Address;
-import couriercompany.CourierCompany;
-import couriercompany.CourierOffice;
+import POJO.Address;
+import POJO.CourierCompany;
+import POJO.CourierOffice;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

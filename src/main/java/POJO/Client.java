@@ -1,7 +1,5 @@
-package users;
+package POJO;
 
-import address.Address;
-import order_package.Orders;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,5 @@
-package users;
+package POJO;
 
-import couriercompany.CourierCompany;
-import couriercompany.CourierOffice;
 import javax.persistence.*;
 
 @Entity

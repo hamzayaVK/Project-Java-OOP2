@@ -1,8 +1,8 @@
 package Controller;
 
 import Services.*;
-import address.Address;
-import couriercompany.CourierCompany;
+import POJO.Address;
+import POJO.CourierCompany;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import users.Courier;
+import POJO.Courier;
 import java.io.IOException;
 import java.net.URL;
 import java.util.*;

@@ -1,15 +1,15 @@
 package singletonconfig;
 
-import address.Address;
-import couriercompany.CourierCompany;
-import couriercompany.CourierOffice;
-import order_package.Orders;
-import order_package.Product;
+import POJO.Address;
+import POJO.CourierCompany;
+import POJO.CourierOffice;
+import POJO.Orders;
+import POJO.Product;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import users.Administrator;
-import users.Client;
-import users.Courier;
+import POJO.Administrator;
+import POJO.Client;
+import POJO.Courier;
 
 public class SingletonConfig {
     private static SingletonConfig single_instance = null;

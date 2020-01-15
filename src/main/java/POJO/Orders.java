@@ -1,10 +1,7 @@
-package order_package;
+package POJO;
 
-import couriercompany.CourierOffice;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import users.Client;
-import users.Courier;
 
 import javax.persistence.*;
 import java.time.LocalDate;

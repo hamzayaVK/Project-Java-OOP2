@@ -1,4 +1,4 @@
-package order_package;
+package POJO;
 
 import javax.persistence.*;
 
